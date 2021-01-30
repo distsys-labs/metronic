@@ -1,0 +1,57 @@
+{
+  "name": "@viperidae/metronic",
+  "version": "1.0.0",
+  "description": "A metric collector with pluggable adapters",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./spec/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Viperidae-Labs/metronic"
+  },
+  "keywords": [
+    "metrics",
+    "telemetry",
+    "timer"
+  ],
+  "author": "Alex Robson",
+  "contributors": [
+    {
+      "name": "Alex Robson",
+      "url": "http://nerdventure.io"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Viperidae-Labs/metronic/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/Viperidae-Labs/metronic",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "chai-as-promised": "^4.3.0",
+    "mocha": "^8.2.1",
+    "sinon": "^1.14.1"
+  },
+  "dependencies": {
+    "fauxdash": "^1.7.1",
+    "metrics": "^0.1.21",
+    "topic-dispatch": "^1.2.0"
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ],
+    "globals": [
+      "_",
+      "should",
+      "sinon",
+      "expect",
+      "hostName",
+      "fs"
+    ]
+  }
+}
